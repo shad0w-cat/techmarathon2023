@@ -21,11 +21,22 @@
 
   <link rel="stylesheet" href="assets/css/animate.min.css">
 
+  <link rel="stylesheet" href="/assets/css/pages.css">
+
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 
 <body>
+  <div id="modalOverlay">
+    <!-- Modal content -->
+    <div id="modalContent">
+      <div id="modalHeader">
+      </div>
+      <div id="modalBody">
+      </div>
+    </div>
+  </div>
   <div class="loader">
     <div class="loader-outter"></div>
     <div class="loader-inner"></div>
@@ -259,7 +270,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/aob.png" alt="speaker name">
+            <img src="/assets/img/events/aob.png" alt="aob" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Auction of Bytes</h5>
               <p class="position">Technical</p>
@@ -270,7 +281,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/bgmi.png" alt="speaker name">
+            <img src="/assets/img/events/bgmi.png" alt="bgmi" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">BattleGrounds Mobile India</h5>
               <p class="position">Non - Technical</p>
@@ -281,7 +292,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/bj.png" alt="speaker name">
+            <img src="/assets/img/events/bj.png" alt="bj" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Bumble Jumble</h5>
               <p class="position">Non - Technical</p>
@@ -292,7 +303,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/cb.png" alt="speaker name">
+            <img src="/assets/img/events/cb.png" alt="cb" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Code Benders</h5>
               <p class="position">Technical</p>
@@ -303,7 +314,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/dts.png" alt="speaker name">
+            <img src="/assets/img/events/dts.png" alt="dts" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Design The Shades</h5>
               <p class="position">Non - Technical</p>
@@ -314,7 +325,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/epvr.png" alt="speaker name">
+            <img src="/assets/img/events/epvr.png" alt="epvr" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">ePVR</h5>
               <p class="position">Non - Technical</p>
@@ -325,7 +336,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/ludo.png" alt="speaker name">
+            <img src="/assets/img/events/ludo.png" alt="ludo" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Ludo</h5>
               <p class="position">Non - Technical</p>
@@ -336,7 +347,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/se.png" alt="speaker name">
+            <img src="/assets/img/events/se.png" alt="se" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Social Escapade</h5>
               <p class="position">Technical</p>
@@ -347,7 +358,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/tn.png" alt="speaker name">
+            <img src="/assets/img/events/tn.png" alt="tn" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Tech Novateur</h5>
               <p class="position">Technical</p>
@@ -358,7 +369,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/tvf.png" alt="speaker name">
+            <img src="/assets/img/events/tvf.png" alt="tvf" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">TV Fandom</h5>
               <p class="position">Non - Technical</p>
@@ -369,7 +380,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/tw.jpg" alt="speaker name">
+            <img src="/assets/img/events/tw.jpg" alt="tw" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Tech Wars</h5>
               <p class="position">Technical</p>
@@ -380,7 +391,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="speaker_box">
           <div class="event_img">
-            <img src="/assets/img/events/wg.png" alt="speaker name">
+            <img src="/assets/img/events/wg.png" alt="wg" class="event-click">
             <!-- <div class="info_box">
               <h5 class="name">Web Gators</h5>
               <p class="position">Technical</p>
@@ -588,6 +599,7 @@
 
   <script src="/assets/js/main.js"></script>
 
+  <script src="/assets/js/modal.js"></script>
   <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
     integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
     data-cf-beacon='{"rayId":"78f5ea8a9c211baa","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
