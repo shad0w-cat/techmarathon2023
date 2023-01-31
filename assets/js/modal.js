@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < eventImages.length; i++) {
         eventImages[i].addEventListener("click", function (event) {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', `/pages/${this.alt}.html`, true);
+            xhr.open('GET', `./pages/${this.alt}.html`, true);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     modalDiv.style.visibility = "unset";
