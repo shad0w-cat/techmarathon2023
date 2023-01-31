@@ -87,14 +87,17 @@ div#root {
     height: 65vh;
     margin-left: 5%;
     padding-right: 2%;
+    padding-bottom: 2%;
 }
 
 .content-table {
-    width: 40%;
+    text-align: center;
+    width: 50%;
     border: 1px solid black;
 }
 
 .content-table td {
+    width: 50%;
     padding: 3%;
     border-collapse: collapse;
 }
@@ -139,11 +142,10 @@ div#root {
 
     .content-table {
         width: 100%;
-        text-align: center;
     }
 
     .content-table td {
         width: 50%;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 }
