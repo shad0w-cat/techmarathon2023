@@ -220,6 +220,10 @@
     content: "\e830";
 }
 
+.lnr-mail:before {
+    content: "\e818";
+}
+
 .lnr {
     font-family: 'Linearicons-Free';
     speak: none;
