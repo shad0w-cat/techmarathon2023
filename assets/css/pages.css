@@ -51,6 +51,7 @@
 
 
 #modalBody {
+    /* height: 100%; */
     overflow: auto;
 }
 
@@ -151,5 +152,16 @@ div#root {
     .content-table td {
         width: 50%;
         border: 1px solid black;
+    }
+
+    #modalOverlay {
+        padding-top: 5%;
+    }
+
+}
+
+@media (width <=1000px) {
+    #modalOverlay {
+        padding-top: 10%;
     }
 }
